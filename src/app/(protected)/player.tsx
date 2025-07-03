@@ -4,10 +4,13 @@ import { router } from "expo-router";
 import dummyBooks from "@/dummyBooks";
 import { SafeAreaView } from "react-native-safe-area-context";
 import PlaybackBar from "@/components/PlaybackBar";
+import { useAudioPlayer } from "expo-audio";
 
-export default function Player() {
+export default function PlayerScreen() {
   const book = dummyBooks[0];
 
+  const player = useAudioPlayer(book.audio_url);
+        
   return (
     <SafeAreaView className="flex-1 py-10 bg-gray-950 p-4 gap-4">
       <Pressable
