@@ -1,11 +1,19 @@
 import {  Tabs } from "expo-router";
 import { MaterialIcons } from "@expo/vector-icons";
-
+import {BottomTabBar} from '@react-navigation/bottom-tabs'
+import FloatingPlayer from "@/components/FloatingPlayer";
+import React from "react";
 export default function TabsLayout() {
 
   return (
-    <Tabs>
-      <Tabs.Screen
+    <Tabs tabBar={(props) =>(
+      <>
+      <FloatingPlayer />  
+      <BottomTabBar {...props} />
+      </>
+    )}
+    >
+      <Tabs.Screen 
         name="index"
         options={{
           title: "Library",

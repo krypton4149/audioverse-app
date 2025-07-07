@@ -1,23 +1,25 @@
 import { View, Text, Pressable, Image } from "react-native";
 import { Entypo, Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
-import dummyBooks from "@/dummyBooks";
 import { SafeAreaView } from "react-native-safe-area-context";
 import PlaybackBar from "@/components/PlaybackBar";
-import { useAudioPlayer, useAudioPlayerStatus } from "expo-audio";
+import { useAudioPlayerStatus } from "expo-audio";
+import { usePlayer } from "@/providers/PlayerProvider";
 
 export default function PlayerScreen() {
-  const book = dummyBooks[0];
-
-  const player = useAudioPlayer(book.audio_url);
+  const { book, player } = usePlayer();
   const playerStatus = useAudioPlayerStatus(player);
+
+  if (!book) {
+    return null;
+  }
 
   const seekTo = (time: number) => {
     player.seekTo(time);
   };
 
   return (
-    <SafeAreaView className="flex-1 py-10  p-4 gap-4">
+    <SafeAreaView className="flex-1 py-10 p-4 gap-4">
       <Pressable
         onPress={() => router.back()}
         className="bg-gray-800 p-2 rounded-full left-4 top-16 absolute"
@@ -41,7 +43,7 @@ export default function PlayerScreen() {
           onSeek={seekTo}
         />
 
-        <View className="flex-row items-center justify-between ">
+        <View className="flex-row items-center justify-between">
           <Ionicons name="play-skip-back" size={24} color="white" />
           <Ionicons name="play-back" size={24} color="white" />
           <Ionicons
