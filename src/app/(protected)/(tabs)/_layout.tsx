@@ -3,8 +3,8 @@ import { MaterialIcons } from "@expo/vector-icons";
 import {BottomTabBar} from '@react-navigation/bottom-tabs'
 import FloatingPlayer from "@/components/FloatingPlayer";
 import React from "react";
-export default function TabsLayout() {
 
+export default function TabsLayout() {
   return (
     <Tabs tabBar={(props) =>(
       <>
@@ -28,6 +28,15 @@ export default function TabsLayout() {
           title: "Discover",
           tabBarIcon: ({ color, size }) => (
             <MaterialIcons name="search" color={color} size={size} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: "Profile",
+          tabBarIcon: ({ color, size }) => (
+            <MaterialIcons name="person" color={color} size={size} />
           ),
         }}
       />

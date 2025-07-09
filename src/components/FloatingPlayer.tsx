@@ -16,15 +16,15 @@ export default function FloatingPlayer() {
 
   return (
     <Link href='/player' asChild>
-      <Pressable className='flex-row gap-4 items-center p-4 bg-slate-900'>
+      <Pressable className='flex-row gap-4 items-center p-2 bg-slate-900'>
         <Image
           source={{ uri: book.thumbnail_url }}
           className='w-16 aspect-square rounded-md'
         />
         <View className='gap-1 flex-1'>
-          <Text className='text-2xl text-gray-100 font-bold'>{book.title}</Text>
+          <Text className='text-1xl text-gray-100 font-bold'>{book.title}</Text>
           <Text className='text-gray-400'>{book.author}</Text>
-        </View>
+        </View>  
 
         <AntDesign
           name={
