@@ -2,14 +2,18 @@ import { Text, View, Image, Pressable } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 import { Link } from 'expo-router';
 import { usePlayer } from '@/providers/PlayerProvider';
-import { Book } from '@/dummyBooks';
+import { Book } from '@/types';
 
 type BookListItemProps = {
-  book: Book;
+  book: Book | null;
 };
 
 export default function BookListItem({ book }: BookListItemProps) {
   const { playBook } = usePlayer();
+
+  if (!book) {
+    return null;
+  }
 
   return (
     <Pressable
@@ -17,7 +21,7 @@ export default function BookListItem({ book }: BookListItemProps) {
       className='flex-row gap-4 items-center'
     >
       <Image
-        source={{ uri: book.thumbnail_url }}
+        source={{ uri: book.thumbnail_url || 'https://via.placeholder.com/160' }}
         className='w-16 aspect-square rounded-md'
       />
       <View className='gap-1 flex-1'>
