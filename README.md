@@ -6,17 +6,12 @@
 
 ## 📱 App Screenshots
 
-### 📚 Library Screen
-<img src="https://raw.githubusercontent.com/krypton4149/audioverse-app/a03bf99a6fdd47911ea9d83fb23fab4cc4de192e/library.png" width="300" />
-
-### 🔍 Discover Screen
-<img src="https://github.com/krypton4149/audioverse-app/blob/7e65642e4cd17eac96ea8dd378ff8230d0f1abff/Discovery.png?raw=true" width="300" />
-
-### 👤 Profile Screen
-<img src="https://raw.githubusercontent.com/krypton4149/audioverse-app/f1f987b1ee23bd4fcf320c2f8d301f2e7b620555/profile.png" width="300" />
-
-### 📝 Edit Profile Screen
-<img src="https://github.com/krypton4149/audioverse-app/blob/7e65642e4cd17eac96ea8dd378ff8230d0f1abff/fiel.png?raw=true" width="300" />
+<div align="center">
+  <img src="https://raw.githubusercontent.com/krypton4149/audioverse-app/a03bf99a6fdd47911ea9d83fb23fab4cc4de192e/library.png" width="200" />
+  <img src="https://github.com/krypton4149/audioverse-app/blob/7e65642e4cd17eac96ea8dd378ff8230d0f1abff/Discovery.png?raw=true" width="200" />
+  <img src="https://raw.githubusercontent.com/krypton4149/audioverse-app/f1f987b1ee23bd4fcf320c2f8d301f2e7b620555/profile.png" width="200" />
+  <img src="https://github.com/krypton4149/audioverse-app/blob/7e65642e4cd17eac96ea8dd378ff8230d0f1abff/fiel.png?raw=true" width="200" />
+</div>
 
 ---
 
@@ -68,9 +63,10 @@ import { ClerkProvider } from '@clerk/clerk-expo';
 </ClerkProvider>
 
 
-
 ---
 
-This will display all images at **300px width**—visually consistent and compact on both GitHub desktop and mobile views. You can increase/decrease the width as per your design preference (e.g., `400`, `250`, etc.).
+✅ **Tips:**
+- Commit the `.md` file as `README.md` in the root of your GitHub repo.
+- Ensure images exist in the repo or are properly linked via raw.githubusercontent.com or `?raw=true` links.
 
-Let me know if you want a side-by-side layout or dark background styling too!
+Let me know if you'd like to add **GIF previews**, **badge icons**, or **deployment instructions** as well!
