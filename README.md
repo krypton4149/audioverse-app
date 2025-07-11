@@ -7,15 +7,16 @@
 ## 📱 App Screenshots
 
 ### 📚 Library Screen
-![image alt] (https://github.com/krypton4149/audioverse-app/blob/a03bf99a6fdd47911ea9d83fb23fab4cc4de192e/library.png)
+![Library](https://raw.githubusercontent.com/krypton4149/audioverse-app/a03bf99a6fdd47911ea9d83fb23fab4cc4de192e/library.png)
+
 ### 🔍 Discover Screen
-![Discover](./Screenshot%202025-07-11%20at%207.21.12%20PM.png)
+![Discover](https://raw.githubusercontent.com/krypton4149/audioverse-app/main/Screenshot%202025-07-11%20at%207.21.12%20PM.png)
 
 ### 👤 Profile Screen
-![Profile](./Screenshot%202025-07-11%20at%207.21.32%20PM.png)
+![Profile](https://raw.githubusercontent.com/krypton4149/audioverse-app/f1f987b1ee23bd4fcf320c2f8d301f2e7b620555/profile.png)
 
 ### 📝 Edit Profile Screen
-![Edit Profile](./Screenshot%202025-07-11%20at%207.22.39%20PM.png)
+![Edit Profile](https://raw.githubusercontent.com/krypton4149/audioverse-app/main/Screenshot%202025-07-11%20at%207.22.39%20PM.png)
 
 ---
 
