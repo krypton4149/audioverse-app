@@ -7,8 +7,7 @@
 ## 📱 App Screenshots
 
 ### 📚 Library Screen
-![Library]([./Screenshot%202025-07-11%20at%207.20.49%20PM.png](https://github.com/krypton4149/audioverse-app/blob/6f6e1adea00382d76c187b080f17d91c39f2a0c5/library.png))
-
+![image alt] (https://github.com/krypton4149/audioverse-app/blob/a03bf99a6fdd47911ea9d83fb23fab4cc4de192e/library.png)
 ### 🔍 Discover Screen
 ![Discover](./Screenshot%202025-07-11%20at%207.21.12%20PM.png)
 
