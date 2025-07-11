@@ -7,16 +7,16 @@
 ## 📱 App Screenshots
 
 ### 📚 Library Screen
-![Library](https://raw.githubusercontent.com/krypton4149/audioverse-app/a03bf99a6fdd47911ea9d83fb23fab4cc4de192e/library.png)
+<img src="https://raw.githubusercontent.com/krypton4149/audioverse-app/a03bf99a6fdd47911ea9d83fb23fab4cc4de192e/library.png" width="300" />
 
 ### 🔍 Discover Screen
-![Discover](https://raw.githubusercontent.com/krypton4149/audioverse-app/main/Screenshot%202025-07-11%20at%207.21.12%20PM.png)
+<img src="https://github.com/krypton4149/audioverse-app/blob/7e65642e4cd17eac96ea8dd378ff8230d0f1abff/Discovery.png?raw=true" width="300" />
 
 ### 👤 Profile Screen
-![Profile](https://raw.githubusercontent.com/krypton4149/audioverse-app/f1f987b1ee23bd4fcf320c2f8d301f2e7b620555/profile.png)
+<img src="https://raw.githubusercontent.com/krypton4149/audioverse-app/f1f987b1ee23bd4fcf320c2f8d301f2e7b620555/profile.png" width="300" />
 
 ### 📝 Edit Profile Screen
-![Edit Profile](https://raw.githubusercontent.com/krypton4149/audioverse-app/main/Screenshot%202025-07-11%20at%207.22.39%20PM.png)
+<img src="https://github.com/krypton4149/audioverse-app/blob/7e65642e4cd17eac96ea8dd378ff8230d0f1abff/fiel.png?raw=true" width="300" />
 
 ---
 
@@ -61,3 +61,16 @@ Clerk provides:
 
    ```env
    CLERK_PUBLISHABLE_KEY=your_clerk_key_here
+import { ClerkProvider } from '@clerk/clerk-expo';
+
+<ClerkProvider publishableKey={CLERK_PUBLISHABLE_KEY}>
+  <App />
+</ClerkProvider>
+
+
+
+---
+
+This will display all images at **300px width**—visually consistent and compact on both GitHub desktop and mobile views. You can increase/decrease the width as per your design preference (e.g., `400`, `250`, etc.).
+
+Let me know if you want a side-by-side layout or dark background styling too!
